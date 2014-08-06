@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59845DA418E9D954009183E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59845DA318E9D954009183E0 /* Foundation.framework */; };
+		59845DA618E9D954009183E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59845DA518E9D954009183E0 /* CoreGraphics.framework */; };
+		59845DA818E9D954009183E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59845DA718E9D954009183E0 /* UIKit.framework */; };
+		59845DBD18E9D954009183E0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59845DBC18E9D954009183E0 /* XCTest.framework */; };
+		59845DBE18E9D954009183E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59845DA318E9D954009183E0 /* Foundation.framework */; };
+		59845DBF18E9D954009183E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59845DA718E9D954009183E0 /* UIKit.framework */; };
+		F0ACB49019856F3200C133A7 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = F0ACB48C19856F3200C133A7 /* LICENSE.md */; };
+		F0ACB49119856F3200C133A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F0ACB48D19856F3200C133A7 /* README.md */; };
+		F0ACB497198571CB00C133A7 /* BMYScrollableNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ACB494198571CB00C133A7 /* BMYScrollableNavigationBar.m */; };
+		F0ACB498198571CB00C133A7 /* BMYScrollableNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ACB496198571CB00C133A7 /* BMYScrollableNavigationBarViewController.m */; };
+		F0F5943F196C03EC009215E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0F59436196C03EC009215E4 /* InfoPlist.strings */; };
+		F0F59440196C03EC009215E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0F59438196C03EC009215E4 /* Images.xcassets */; };
+		F0F59441196C03EC009215E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F59439196C03EC009215E4 /* main.m */; };
+		F0F59442196C03EC009215E4 /* BMYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5943B196C03EC009215E4 /* BMYAppDelegate.m */; };
+		F0F59443196C03EC009215E4 /* BMYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5943D196C03EC009215E4 /* BMYViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59845DC018E9D954009183E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59845D9818E9D954009183E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59845D9F18E9D954009183E0;
+			remoteInfo = SherginScrollableNavigationBarDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34035E7A98CC4178A7671EAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59845DA018E9D954009183E0 /* BMYScrollableNavigationBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMYScrollableNavigationBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59845DA318E9D954009183E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		59845DA518E9D954009183E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		59845DA718E9D954009183E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		59845DBB18E9D954009183E0 /* BMYScrollableNavigationBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMYScrollableNavigationBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59845DBC18E9D954009183E0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F0ACB48C19856F3200C133A7 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		F0ACB48D19856F3200C133A7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		F0ACB493198571CB00C133A7 /* BMYScrollableNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMYScrollableNavigationBar.h; sourceTree = "<group>"; };
+		F0ACB494198571CB00C133A7 /* BMYScrollableNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMYScrollableNavigationBar.m; sourceTree = "<group>"; };
+		F0ACB495198571CB00C133A7 /* BMYScrollableNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMYScrollableNavigationBarViewController.h; sourceTree = "<group>"; };
+		F0ACB496198571CB00C133A7 /* BMYScrollableNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMYScrollableNavigationBarViewController.m; sourceTree = "<group>"; };
+		F0F59434196C03EC009215E4 /* BMYScrollableNavigationBarDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BMYScrollableNavigationBarDemo-Info.plist"; sourceTree = "<group>"; };
+		F0F59435196C03EC009215E4 /* BMYScrollableNavigationBarDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMYScrollableNavigationBarDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F0F59437196C03EC009215E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0F59438196C03EC009215E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F0F59439196C03EC009215E4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0F5943A196C03EC009215E4 /* BMYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMYAppDelegate.h; sourceTree = "<group>"; };
+		F0F5943B196C03EC009215E4 /* BMYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMYAppDelegate.m; sourceTree = "<group>"; };
+		F0F5943C196C03EC009215E4 /* BMYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMYViewController.h; sourceTree = "<group>"; };
+		F0F5943D196C03EC009215E4 /* BMYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMYViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59845D9D18E9D954009183E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59845DA618E9D954009183E0 /* CoreGraphics.framework in Frameworks */,
+				59845DA818E9D954009183E0 /* UIKit.framework in Frameworks */,
+				59845DA418E9D954009183E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59845DB818E9D954009183E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59845DBD18E9D954009183E0 /* XCTest.framework in Frameworks */,
+				59845DBF18E9D954009183E0 /* UIKit.framework in Frameworks */,
+				59845DBE18E9D954009183E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59845D9718E9D954009183E0 = {
+			isa = PBXGroup;
+			children = (
+				F0ACB48C19856F3200C133A7 /* LICENSE.md */,
+				F0ACB48D19856F3200C133A7 /* README.md */,
+				F0ACB492198571CB00C133A7 /* BMYScrollableNavigationBar */,
+				F0F59433196C03EC009215E4 /* BMYScrollableNavigationBarDemo */,
+				59845DA218E9D954009183E0 /* Frameworks */,
+				59845DA118E9D954009183E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59845DA118E9D954009183E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59845DA018E9D954009183E0 /* BMYScrollableNavigationBarDemo.app */,
+				59845DBB18E9D954009183E0 /* BMYScrollableNavigationBarDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59845DA218E9D954009183E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59845DA318E9D954009183E0 /* Foundation.framework */,
+				59845DA518E9D954009183E0 /* CoreGraphics.framework */,
+				59845DA718E9D954009183E0 /* UIKit.framework */,
+				59845DBC18E9D954009183E0 /* XCTest.framework */,
+				34035E7A98CC4178A7671EAD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0ACB492198571CB00C133A7 /* BMYScrollableNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				F0ACB493198571CB00C133A7 /* BMYScrollableNavigationBar.h */,
+				F0ACB494198571CB00C133A7 /* BMYScrollableNavigationBar.m */,
+				F0ACB495198571CB00C133A7 /* BMYScrollableNavigationBarViewController.h */,
+				F0ACB496198571CB00C133A7 /* BMYScrollableNavigationBarViewController.m */,
+			);
+			path = BMYScrollableNavigationBar;
+			sourceTree = "<group>";
+		};
+		F0F59433196C03EC009215E4 /* BMYScrollableNavigationBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F0F59434196C03EC009215E4 /* BMYScrollableNavigationBarDemo-Info.plist */,
+				F0F59435196C03EC009215E4 /* BMYScrollableNavigationBarDemo-Prefix.pch */,
+				F0F59436196C03EC009215E4 /* InfoPlist.strings */,
+				F0F59438196C03EC009215E4 /* Images.xcassets */,
+				F0F59439196C03EC009215E4 /* main.m */,
+				F0F5943A196C03EC009215E4 /* BMYAppDelegate.h */,
+				F0F5943B196C03EC009215E4 /* BMYAppDelegate.m */,
+				F0F5943C196C03EC009215E4 /* BMYViewController.h */,
+				F0F5943D196C03EC009215E4 /* BMYViewController.m */,
+			);
+			path = BMYScrollableNavigationBarDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59845D9F18E9D954009183E0 /* BMYScrollableNavigationBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59845DCC18E9D954009183E0 /* Build configuration list for PBXNativeTarget "BMYScrollableNavigationBarDemo" */;
+			buildPhases = (
+				59845D9C18E9D954009183E0 /* Sources */,
+				59845D9D18E9D954009183E0 /* Frameworks */,
+				59845D9E18E9D954009183E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMYScrollableNavigationBarDemo;
+			productName = SherginScrollableNavigationBarDemo;
+			productReference = 59845DA018E9D954009183E0 /* BMYScrollableNavigationBarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59845DBA18E9D954009183E0 /* BMYScrollableNavigationBarDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59845DCF18E9D954009183E0 /* Build configuration list for PBXNativeTarget "BMYScrollableNavigationBarDemoTests" */;
+			buildPhases = (
+				59845DB718E9D954009183E0 /* Sources */,
+				59845DB818E9D954009183E0 /* Frameworks */,
+				59845DB918E9D954009183E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59845DC118E9D954009183E0 /* PBXTargetDependency */,
+			);
+			name = BMYScrollableNavigationBarDemoTests;
+			productName = SherginScrollableNavigationBarDemoTests;
+			productReference = 59845DBB18E9D954009183E0 /* BMYScrollableNavigationBarDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59845D9818E9D954009183E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Shergin;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "shergin research";
+				TargetAttributes = {
+					59845DBA18E9D954009183E0 = {
+						TestTargetID = 59845D9F18E9D954009183E0;
+					};
+				};
+			};
+			buildConfigurationList = 59845D9B18E9D954009183E0 /* Build configuration list for PBXProject "BMYScrollableNavigationBarDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 59845D9718E9D954009183E0;
+			productRefGroup = 59845DA118E9D954009183E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59845D9F18E9D954009183E0 /* BMYScrollableNavigationBarDemo */,
+				59845DBA18E9D954009183E0 /* BMYScrollableNavigationBarDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59845D9E18E9D954009183E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F59440196C03EC009215E4 /* Images.xcassets in Resources */,
+				F0ACB49019856F3200C133A7 /* LICENSE.md in Resources */,
+				F0ACB49119856F3200C133A7 /* README.md in Resources */,
+				F0F5943F196C03EC009215E4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59845DB918E9D954009183E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59845D9C18E9D954009183E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0ACB498198571CB00C133A7 /* BMYScrollableNavigationBarViewController.m in Sources */,
+				F0F59441196C03EC009215E4 /* main.m in Sources */,
+				F0F59443196C03EC009215E4 /* BMYViewController.m in Sources */,
+				F0F59442196C03EC009215E4 /* BMYAppDelegate.m in Sources */,
+				F0ACB497198571CB00C133A7 /* BMYScrollableNavigationBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59845DB718E9D954009183E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59845DC118E9D954009183E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59845D9F18E9D954009183E0 /* BMYScrollableNavigationBarDemo */;
+			targetProxy = 59845DC018E9D954009183E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0F59436196C03EC009215E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0F59437196C03EC009215E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59845DCA18E9D954009183E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		59845DCB18E9D954009183E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59845DCD18E9D954009183E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMYScrollableNavigationBarDemo/BMYScrollableNavigationBarDemo-Prefix.pch";
+				INFOPLIST_FILE = "BMYScrollableNavigationBarDemo/BMYScrollableNavigationBarDemo-Info.plist";
+				PRODUCT_NAME = BMYScrollableNavigationBarDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		59845DCE18E9D954009183E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMYScrollableNavigationBarDemo/BMYScrollableNavigationBarDemo-Prefix.pch";
+				INFOPLIST_FILE = "BMYScrollableNavigationBarDemo/BMYScrollableNavigationBarDemo-Info.plist";
+				PRODUCT_NAME = BMYScrollableNavigationBarDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		59845DD018E9D954009183E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BMYScrollableNavigationBarDemo.app/BMYScrollableNavigationBarDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMYScrollableNavigationBarDemo/BMYScrollableNavigationBarDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BMYScrollableNavigationBarDemoTests/BMYScrollableNavigationBarDemoTests-Info.plist";
+				PRODUCT_NAME = BMYScrollableNavigationBarDemoTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		59845DD118E9D954009183E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BMYScrollableNavigationBarDemo.app/BMYScrollableNavigationBarDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMYScrollableNavigationBarDemo/BMYScrollableNavigationBarDemo-Prefix.pch";
+				INFOPLIST_FILE = "BMYScrollableNavigationBarDemoTests/BMYScrollableNavigationBarDemoTests-Info.plist";
+				PRODUCT_NAME = BMYScrollableNavigationBarDemoTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59845D9B18E9D954009183E0 /* Build configuration list for PBXProject "BMYScrollableNavigationBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59845DCA18E9D954009183E0 /* Debug */,
+				59845DCB18E9D954009183E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59845DCC18E9D954009183E0 /* Build configuration list for PBXNativeTarget "BMYScrollableNavigationBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59845DCD18E9D954009183E0 /* Debug */,
+				59845DCE18E9D954009183E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59845DCF18E9D954009183E0 /* Build configuration list for PBXNativeTarget "BMYScrollableNavigationBarDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59845DD018E9D954009183E0 /* Debug */,
+				59845DD118E9D954009183E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59845D9818E9D954009183E0 /* Project object */;
+}
