@@ -25,14 +25,6 @@ static const CGFloat kStatusBarPlusNavigationBarHeight = 64.0f;
 
 @implementation BMYScrollableNavigationBarViewController
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        _enableScrollableNavigationBar = YES;
-    }
-    return self;
-}
-
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
