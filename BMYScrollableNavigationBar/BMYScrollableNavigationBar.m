@@ -311,7 +311,7 @@ NSString *NavigationBarAnimationName = @"BMYScrollableNavigationBar";
 
     // apply offset
     _barOffset = targetOffset;
-    CGAffineTransform offsetTransform = CGAffineTransformMakeTranslation(0, targetOffset - [UIApplication sharedApplication].statusBarFrame.size.height);
+    CGAffineTransform offsetTransform = CGAffineTransformMakeTranslation(0, targetOffset - [self statusBarHeight]);
     self.transform = offsetTransform;
 
     if (animated) {
