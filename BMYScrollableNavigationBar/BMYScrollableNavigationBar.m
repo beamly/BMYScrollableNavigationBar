@@ -271,10 +271,6 @@ NSString *NavigationBarAnimationName = @"BMYScrollableNavigationBar";
     return 0.0f;
 }
 
-- (CGFloat)barOffset {
-    return self.frame.origin.y - self.statusBarHeight;
-}
-
 - (void)setBarOffset:(CGFloat)offset {
     [self setBarOffset:offset animated:NO];
 }
@@ -292,9 +288,9 @@ NSString *NavigationBarAnimationName = @"BMYScrollableNavigationBar";
     offset = MAX(offset, -barHeight);
 
     CGFloat alpha = MIN(1.0f - ABS(offset / barHeight) + nearZero, 1.0f);
-    CGFloat currentOffset = self.frame.origin.y;
+    CGFloat currentOffset = self.barOffset;
     CGFloat targetOffset = statusBarHeight + offset;
-
+    
     if (ABS(currentOffset - targetOffset) < FLT_EPSILON) {
         return;
     }
@@ -314,9 +310,9 @@ NSString *NavigationBarAnimationName = @"BMYScrollableNavigationBar";
     }
 
     // apply offset
-    CGRect frame = self.frame;
-    frame.origin.y = targetOffset;
-    self.frame = frame;
+    _barOffset = targetOffset;
+    CGAffineTransform offsetTransform = CGAffineTransformMakeTranslation(0, targetOffset - [self statusBarHeight]);
+    self.transform = offsetTransform;
 
     if (animated) {
         [UIView commitAnimations];
