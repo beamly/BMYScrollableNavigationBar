@@ -31,9 +31,6 @@ typedef enum {
 @end
 
 @implementation BMYScrollableNavigationBar
-{
-    CGFloat _savedBarOffset;
-}
 
 const CGFloat DefaultScrollTolerance = 44.0f;
 SEL scrollViewDidScrollOriginalSelector;
@@ -274,10 +271,6 @@ NSString *NavigationBarAnimationName = @"BMYScrollableNavigationBar";
     return 0.0f;
 }
 
-- (CGFloat)barOffset {
-    return _savedBarOffset;
-}
-
 - (void)setBarOffset:(CGFloat)offset {
     [self setBarOffset:offset animated:NO];
 }
@@ -295,7 +288,7 @@ NSString *NavigationBarAnimationName = @"BMYScrollableNavigationBar";
     offset = MAX(offset, -barHeight);
 
     CGFloat alpha = MIN(1.0f - ABS(offset / barHeight) + nearZero, 1.0f);
-    CGFloat currentOffset = _savedBarOffset;
+    CGFloat currentOffset = self.barOffset;
     CGFloat targetOffset = statusBarHeight + offset;
     
     if (ABS(currentOffset - targetOffset) < FLT_EPSILON) {
@@ -317,7 +310,7 @@ NSString *NavigationBarAnimationName = @"BMYScrollableNavigationBar";
     }
 
     // apply offset
-    _savedBarOffset = targetOffset;
+    self.barOffset = targetOffset;
     CGAffineTransform offsetTransform = CGAffineTransformMakeTranslation(0, targetOffset - [UIApplication sharedApplication].statusBarFrame.size.height);
     self.transform = offsetTransform;
 
