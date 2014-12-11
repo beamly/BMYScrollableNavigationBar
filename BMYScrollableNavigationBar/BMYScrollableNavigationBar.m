@@ -257,18 +257,17 @@ NSString *NavigationBarAnimationName = @"BMYScrollableNavigationBar";
 }
 
 - (CGFloat)statusBarHeight {
+    CGRect statusBarSize = [UIApplication sharedApplication].statusBarFrame.size;
     switch ([UIApplication sharedApplication].statusBarOrientation) {
         case UIInterfaceOrientationPortrait:
         case UIInterfaceOrientationPortraitUpsideDown:
-            return CGRectGetHeight([UIApplication sharedApplication].statusBarFrame);
-            break;
+            return statusBarSize.height;
         case UIInterfaceOrientationLandscapeLeft:
         case UIInterfaceOrientationLandscapeRight:
-            return CGRectGetWidth([UIApplication sharedApplication].statusBarFrame);
+            return MIN(statusBarSize.height, statusBarSize.width);
         default:
-            break;
+            return 0.0;
     };
-    return 0.0f;
 }
 
 - (CGFloat)barOffset {
