@@ -1,4 +1,4 @@
-#BMYScrollableNavigationBar
+# BMYScrollableNavigationBar
 
 Facebook-style scrollable navigation bar as used in the [Beamly iOS app](https://itunes.apple.com/gb/app/beamly-tv-by-zeebox/id454689266?mt=8).
 
@@ -41,10 +41,10 @@ self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAuto
 [self bindNavigationBarToScrollView:self.scrollView];
 ```
 
-#Licensing
+# Licensing
 
 This project is licensed under the [BSD 3-Clause license](http://opensource.org/licenses/BSD-3-Clause)
 
-#Contributions
+# Contributions
 
 Note that we are not accepting pull requests at this time.
